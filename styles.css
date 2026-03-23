@@ -884,7 +884,7 @@ button {
    SOLUCIÓN: El selector está mal escrito, debería ser .project__card:hover .project__overlay
    El selector correcto utiliza :hover en el contenedor padre para afectar al hijo
    Cambiar project__card-hover por .project__card:hover */
-.project__card-hover .project__overlay {
+.project__card:hover .project__overlay {
     opacity: 1;
 }
 
@@ -1023,6 +1023,7 @@ button {
 .contact__card {
     /* ERROR 18: La card de contacto no tiene el fondo degradado
        PISTA: Falta la propiedad background con el gradiente primario */
+    background: var(--gradient-primary);
     border-radius: var(--border-radius-xl);
     padding: var(--spacing-2xl);
     text-align: center;
