@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <!-- 
@@ -32,18 +33,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de [Tu Nombre] - Ingeniero en Tecnologías de la Información">
     <title>Tu Nombre | Portfolio</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- ========== HEADER ========== -->
     <header class="header" id="header">
@@ -51,18 +54,18 @@
             <a href="#home" class="nav__logo">
                 <span class="logo__bracket">&lt;</span>TuNombre<span class="logo__bracket">/&gt;</span>
             </a>
-            
+
             <!-- Checkbox para menú móvil (CSS only) -->
             <input type="checkbox" id="nav-toggle" class="nav__checkbox">
             <label for="nav-toggle" class="nav__toggle">
                 <i class="fas fa-bars"></i>
             </label>
-            
+
             <div class="nav__menu" id="nav-menu">
                 <label for="nav-toggle" class="nav__close">
                     <i class="fas fa-times"></i>
                 </label>
-                
+
                 <ul class="nav__list">
                     <li class="nav__item">
                         <label for="nav-toggle">
@@ -105,24 +108,24 @@
                         <span class="highlight">Ingeniero de Software</span> en Crecimiento
                     </h2>
                     <p class="hero__description">
-                        Recién egresado de Tecnologías de la Información apasionado por crear 
-                        soluciones digitales innovadoras. Combino creatividad técnica con un 
+                        Recién egresado de Tecnologías de la Información apasionado por crear
+                        soluciones digitales innovadoras. Combino creatividad técnica con un
                         enfoque orientado a resultados para transformar ideas en código funcional.
                     </p>
                     <!-- ERROR 1: El botón "Ver mis proyectos" no tiene estilos de botón primario
                          PISTA: Revisa las clases del botón, falta una clase -->
                     <div class="hero__buttons">
-                        <a href="#projects" class="btn">
+                        <a href="#projects" class="btn btn--primary">
                             <i class="fas fa-rocket"></i> Ver mis proyectos
                         </a>
                         <!-- ERROR 2: El enlace no lleva a la sección correcta
                              PISTA: El ID de la sección de contacto es "contact", verifica el href -->
-                        <a href="#contacto" class="btn btn--outline">
+                        <a href="#contact" class="btn btn--outline">
                             <i class="fas fa-envelope"></i> Contáctame
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="hero__image">
                     <div class="hero__blob">
                         <div class="hero__avatar">
@@ -134,7 +137,7 @@
                     <div class="hero__decoration hero__decoration--3"></div>
                 </div>
             </div>
-            
+
             <div class="hero__scroll">
                 <a href="#interests" class="hero__scroll-link">
                     <span>Scroll</span>
@@ -153,18 +156,18 @@
                         Áreas tecnológicas que me entusiasman y en las que busco especializarme
                     </p>
                 </div>
-                
+
                 <div class="interests__grid">
                     <!-- Card 1 -->
                     <!-- ERROR 3: Esta card no tiene el icono visible
                          PISTA: Revisa el contenido del div card__icon, falta el elemento del icono -->
                     <article class="interest__card">
                         <div class="card__icon">
-                            
+
                         </div>
                         <h3 class="card__title">Desarrollo Web</h3>
                         <p class="card__description">
-                            Creación de aplicaciones web modernas con tecnologías como 
+                            Creación de aplicaciones web modernas con tecnologías como
                             HTML5, CSS3, JavaScript y frameworks actuales.
                         </p>
                         <div class="card__tags">
@@ -173,7 +176,7 @@
                             <span class="tag">React</span>
                         </div>
                     </article>
-                    
+
                     <!-- Card 2 -->
                     <!-- ERROR 4: Esta card no tiene los estilos de tarjeta aplicados
                          PISTA: El nombre de la clase está mal escrito, revisa la ortografía de "interest" -->
@@ -183,7 +186,7 @@
                         </div>
                         <h3 class="card__title">Ciberseguridad</h3>
                         <p class="card__description">
-                            Protección de sistemas y datos, análisis de vulnerabilidades 
+                            Protección de sistemas y datos, análisis de vulnerabilidades
                             y mejores prácticas de seguridad informática.
                         </p>
                         <div class="card__tags">
@@ -192,7 +195,7 @@
                             <span class="tag">Redes</span>
                         </div>
                     </article>
-                    
+
                     <!-- Card 3 -->
                     <article class="interest__card">
                         <div class="card__icon">
@@ -200,7 +203,7 @@
                         </div>
                         <h3 class="card__title">Inteligencia Artificial</h3>
                         <p class="card__description">
-                            Machine Learning, procesamiento de datos y desarrollo de 
+                            Machine Learning, procesamiento de datos y desarrollo de
                             soluciones inteligentes con Python.
                         </p>
                         <div class="card__tags">
@@ -209,7 +212,7 @@
                             <span class="tag">Data Science</span>
                         </div>
                     </article>
-                    
+
                     <!-- Card 4 -->
                     <article class="interest__card">
                         <div class="card__icon">
@@ -217,7 +220,7 @@
                         </div>
                         <h3 class="card__title">Bases de Datos</h3>
                         <p class="card__description">
-                            Diseño, administración y optimización de bases de datos 
+                            Diseño, administración y optimización de bases de datos
                             relacionales y NoSQL.
                         </p>
                         <div class="card__tags">
@@ -226,7 +229,7 @@
                             <span class="tag">MongoDB</span>
                         </div>
                     </article>
-                    
+
                     <!-- Card 5 -->
                     <article class="interest__card">
                         <div class="card__icon">
@@ -234,7 +237,7 @@
                         </div>
                         <h3 class="card__title">Desarrollo Móvil</h3>
                         <p class="card__description">
-                            Creación de aplicaciones móviles nativas y multiplataforma 
+                            Creación de aplicaciones móviles nativas y multiplataforma
                             para Android e iOS.
                         </p>
                         <div class="card__tags">
@@ -243,7 +246,7 @@
                             <span class="tag">Kotlin</span>
                         </div>
                     </article>
-                    
+
                     <!-- Card 6 -->
                     <article class="interest__card">
                         <div class="card__icon">
@@ -251,7 +254,7 @@
                         </div>
                         <h3 class="card__title">Cloud Computing</h3>
                         <p class="card__description">
-                            Servicios en la nube, arquitecturas escalables y 
+                            Servicios en la nube, arquitecturas escalables y
                             despliegue de aplicaciones.
                         </p>
                         <div class="card__tags">
@@ -261,7 +264,7 @@
                         </div>
                     </article>
                 </div>
-                
+
                 <!-- Relevant Subjects -->
                 <div class="subjects">
                     <h3 class="subjects__title">
@@ -289,11 +292,11 @@
                         <span class="section__subtitle">Conoce mi trayectoria</span>
                         <h2 class="section__title">Mi Currículum</h2>
                         <p class="cv__description">
-                            Descarga mi CV para conocer mi formación académica, habilidades 
-                            técnicas y experiencia. También puedes conectar conmigo en mis 
+                            Descarga mi CV para conocer mi formación académica, habilidades
+                            técnicas y experiencia. También puedes conectar conmigo en mis
                             redes profesionales.
                         </p>
-                        
+
                         <div class="cv__buttons">
                             <a href="https://www.overleaf.com/gallery/tagged/cv" class="btn btn--primary btn--large">
                                 <i class="fas fa-download"></i> Descargar CV
@@ -303,11 +306,12 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="cv__social">
                         <h3 class="cv__social-title">Conectemos</h3>
                         <div class="cv__social-links">
-                            <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="social__card">
+                            <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer"
+                                class="social__card">
                                 <div class="social__icon social__icon--linkedin">
                                     <i class="fab fa-linkedin-in"></i>
                                 </div>
@@ -317,8 +321,9 @@
                                 </div>
                                 <i class="fas fa-arrow-right social__arrow"></i>
                             </a>
-                            
-                            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="social__card">
+
+                            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer"
+                                class="social__card">
                                 <div class="social__icon social__icon--github">
                                     <i class="fab fa-github"></i>
                                 </div>
@@ -328,7 +333,7 @@
                                 </div>
                                 <i class="fas fa-arrow-right social__arrow"></i>
                             </a>
-                            
+
                             <a href="mailto:tu@email.com" class="social__card">
                                 <div class="social__icon social__icon--email">
                                     <i class="fas fa-envelope"></i>
@@ -357,7 +362,7 @@
                         Una selección de proyectos que demuestran mis habilidades y pasión por el desarrollo
                     </p>
                 </div>
-                
+
                 <div class="projects__grid">
                     <!-- Project 1 -->
                     <article class="project__card">
@@ -369,7 +374,8 @@
                                 <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/tu-usuario/proyecto-1" target="_blank" rel="noopener noreferrer" class="project__link">
+                                <a href="https://github.com/tu-usuario/proyecto-1" target="_blank"
+                                    rel="noopener noreferrer" class="project__link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -377,7 +383,7 @@
                         <div class="project__content">
                             <h3 class="project__title">E-Commerce Platform</h3>
                             <p class="project__description">
-                                Plataforma de comercio electrónico con carrito de compras, 
+                                Plataforma de comercio electrónico con carrito de compras,
                                 autenticación de usuarios y pasarela de pagos integrada.
                             </p>
                             <div class="project__tech">
@@ -387,7 +393,7 @@
                             </div>
                         </div>
                     </article>
-                    
+
                     <!-- Project 2 -->
                     <!-- ERROR 6: Esta tarjeta de proyecto no tiene los estilos de card
                          PISTA: Falta la clase que identifica a este elemento como tarjeta de proyecto -->
@@ -400,7 +406,8 @@
                                 <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/tu-usuario/proyecto-2" target="_blank" rel="noopener noreferrer" class="project__link">
+                                <a href="https://github.com/tu-usuario/proyecto-2" target="_blank"
+                                    rel="noopener noreferrer" class="project__link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -408,7 +415,7 @@
                         <div class="project__content">
                             <h3 class="project__title">Dashboard Analytics</h3>
                             <p class="project__description">
-                                Panel de control interactivo para visualización de datos 
+                                Panel de control interactivo para visualización de datos
                                 con gráficos dinámicos y reportes automatizados.
                             </p>
                             <div class="project__tech">
@@ -420,7 +427,7 @@
                             </div>
                         </div>
                     </article>
-                    
+
                     <!-- Project 3 -->
                     <article class="project__card">
                         <div class="project__image">
@@ -431,7 +438,8 @@
                                 <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/tu-usuario/proyecto-3" target="_blank" rel="noopener noreferrer" class="project__link">
+                                <a href="https://github.com/tu-usuario/proyecto-3" target="_blank"
+                                    rel="noopener noreferrer" class="project__link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -439,7 +447,7 @@
                         <div class="project__content">
                             <h3 class="project__title">AI Chatbot Assistant</h3>
                             <p class="project__description">
-                                Asistente virtual inteligente con procesamiento de lenguaje 
+                                Asistente virtual inteligente con procesamiento de lenguaje
                                 natural y respuestas contextuales.
                             </p>
                             <div class="project__tech">
@@ -450,9 +458,10 @@
                         </div>
                     </article>
                 </div>
-                
+
                 <div class="projects__more">
-                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer"
+                        class="btn btn--outline">
                         <i class="fab fa-github"></i> Ver más en GitHub
                     </a>
                 </div>
@@ -467,10 +476,10 @@
                         <span class="section__subtitle">¿Tienes un proyecto?</span>
                         <h2 class="section__title">¡Hablemos!</h2>
                         <p class="contact__description">
-                            Estoy disponible para oportunidades laborales, proyectos freelance 
+                            Estoy disponible para oportunidades laborales, proyectos freelance
                             o simplemente para conectar. ¡No dudes en contactarme!
                         </p>
-                        
+
                         <div class="contact__data">
                             <div class="contact__item">
                                 <div class="contact__icon">
@@ -481,7 +490,7 @@
                                     <a href="mailto:tu@email.com" class="contact__value">tu@email.com</a>
                                 </div>
                             </div>
-                            
+
                             <!-- ERROR 8: Este icono de ubicación no se muestra correctamente
                                  PISTA: La clase del icono está incompleta, revisa el nombre del icono de Font Awesome -->
                             <div class="contact__item">
@@ -493,8 +502,8 @@
                                     <span class="contact__value">Ciudad, País</span>
                                 </div>
                             </div>
-                            
-                    <!-- ERROR 9: El texto "Disponible para trabajar" no tiene el estilo verde
+
+                            <!-- ERROR 9: El texto "Disponible para trabajar" no tiene el estilo verde
                          PISTA: Falta el modificador de clase que indica disponibilidad -->
                             <div class="contact__item">
                                 <div class="contact__icon">
@@ -507,7 +516,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="contact__cta">
                         <div class="contact__card">
                             <h3 class="contact__card-title">¿Listo para comenzar?</h3>
@@ -536,14 +545,16 @@
                         Gracias por visitar mi portfolio. ¡Espero que podamos trabajar juntos pronto!
                     </p>
                 </div>
-                
+
                 <!-- ERROR 10: Uno de los íconos de redes sociales no tiene la clase correcta para estilos
                      PISTA: Revisa que todos los enlaces tengan la clase footer__social-link -->
                 <div class="footer__social">
-                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer"
+                        class="footer__social-link" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="mailto:tu@email.com" class="footer__social-link" aria-label="Email">
@@ -551,7 +562,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="footer__bottom">
                 <p class="footer__copyright">
                     &copy; 2026 Tu Nombre. Todos los derechos reservados.
@@ -568,4 +579,5 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 </body>
+
 </html>
